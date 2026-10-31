@@ -59,6 +59,67 @@ h1{color:#202124;font-weight:700;letter-spacing:-3.7px}h1 span{background:linear
 .disclaimer{color:#70757a}
 @media(max-width:560px){.hero{padding:66px 0 44px}h1{letter-spacing:-2.3px}}
 
+
+/* Responsive overflow fixes: keep every card and control inside the viewport. */
+*,*::before,*::after{box-sizing:border-box}
+html,body{width:100%;max-width:100%;overflow-x:clip}
+.wrap{width:min(1160px,calc(100% - 40px));min-width:0}
+.grid{grid-template-columns:repeat(3,minmax(0,1fr));min-width:0}
+.project{min-width:0;max-width:100%;overflow:hidden}
+.project-top,.owner,.project-bottom{min-width:0;max-width:100%}
+.owner{flex:1}
+.repo-name,.owner-name{min-width:0;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.tag{flex:0 1 auto;max-width:42%;overflow:hidden;text-overflow:ellipsis}
+.project h3,.project p,.project-bottom span,.project-stats span{min-width:0;overflow-wrap:anywhere;word-break:break-word}
+.project-bottom{flex-wrap:wrap}
+.project-bottom span:first-child{overflow-wrap:anywhere}
+.toolbar{min-width:0}
+.toolbar>*{min-width:0;max-width:100%;width:100%}
+.searchbox{min-width:0}
+.chips{min-width:0;max-width:100%}
+.chip{max-width:100%;white-space:normal}
+.callout>*{min-width:0;max-width:100%}
+.modal{min-width:0;max-width:100%;overflow-wrap:anywhere}
+.modal-actions>*{max-width:100%;min-width:0}
+@media(max-width:850px){
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .toolbar{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .searchbox{grid-column:1/-1}
+}
+@media(max-width:560px){
+  .wrap{width:calc(100% - 28px);max-width:100%}
+  .grid{grid-template-columns:minmax(0,1fr);gap:12px}
+  .project{width:100%;min-width:0;padding:16px}
+  .project-top{gap:8px}
+  .tag{max-width:40%;font-size:8px}
+  .project h3{font-size:14px;line-height:1.5}
+  .project p{line-height:1.65}
+  .project-bottom{align-items:flex-start}
+  .toolbar{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+  .toolbar select{font-size:12px;padding:0 9px}
+  .searchbox{grid-column:1/-1}
+  .filter-row{align-items:flex-start}
+  .chips{gap:6px}
+  .chip{padding:7px 10px}
+  .hero-actions>*{max-width:100%}
+  .callout{padding:21px}
+  .callout .primary{white-space:normal;text-align:center}
+  .modal-backdrop{padding:12px}
+  .modal{padding:19px;max-height:90dvh}
+  .modal-actions{flex-direction:column}
+  .modal-actions>*{text-align:center}
+  .footer-inner{min-width:0;overflow-wrap:anywhere}
+}
+@media(max-width:360px){
+  .wrap{width:calc(100% - 24px)}
+  .brand{font-size:16px}
+  .nav-cta{font-size:11px;padding:10px 12px}
+  h1{font-size:clamp(36px,11vw,44px);letter-spacing:-2px}
+  .toolbar{grid-template-columns:minmax(0,1fr)}
+  .searchbox{grid-column:auto}
+  .project-stats{gap:9px}
+}
+
 </style>
 </head>
 <body>
