@@ -157,6 +157,10 @@ h1 span{background:linear-gradient(115deg,#a78bfa 0%,#7c6cf2 48%,#4285f4 100%);b
 .project h3{color:#e8eaed}
 .project-bottom{border-top-color:#30343d;color:#aeb4bf}
 .project-bottom span:last-child{color:#8ab4f8}
+/* Make the card details action easier to notice and tap. */
+.project-bottom span:last-child{font:600 12px Roboto,Arial,sans-serif;color:#a8c7fa;background:#202b3b;border:1px solid #3d587a;border-radius:999px;padding:9px 14px;white-space:nowrap;cursor:pointer;transition:background .18s,border-color .18s}
+.project:hover .project-bottom span:last-child{background:#293a52;border-color:#8ab4f8}
+@media(max-width:560px){.project-bottom span:last-child{font-size:12px;padding:10px 15px}}
 .empty{border-color:#3c4048;color:#aeb4bf}
 .empty strong{color:#e8eaed}
 .notice{background:#191b20;border-color:#30343d;color:#bdc1c6}
