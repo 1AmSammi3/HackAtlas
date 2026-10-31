@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+ <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a99aff"/><stop offset="1" stop-color="#6e5bd4"/></linearGradient>
+ <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse"><path d="M42 0H0V42" fill="none" stroke="#242424" stroke-width="1"/></pattern>
+ <radialGradient id="glow"><stop stop-color="#3619cc" stop-opacity=".24"/><stop offset="1" stop-color="#090909" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1200" height="630" fill="#090909"/>
+<rect width="1200" height="630" fill="url(#grid)" opacity=".58"/>
+<ellipse cx="1000" cy="120" rx="430" ry="330" fill="url(#glow)"/>
+<rect x="84" y="78" width="48" height="48" rx="10" fill="#d8d8d8"/>
+<path d="M97 89h9v10h8V89h9v26h-9v-9h-8v9h-9z" fill="#090909"/>
+<path d="M114 99h9v7h-9z" fill="#8b78ff"/>
+<text x="148" y="110" fill="#e7e7e7" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="600" letter-spacing="-1">HackAtlas</text>
+<text x="84" y="270" fill="#888" font-family="Arial,Helvetica,sans-serif" font-size="18" letter-spacing="4">YOUR MAP TO OPEN SOURCE</text>
+<text x="80" y="370" fill="#f0f0f0" font-family="Arial,Helvetica,sans-serif" font-size="76" font-weight="600" letter-spacing="-4">Find your next</text>
+<text x="80" y="460" fill="url(#accent)" font-family="Arial,Helvetica,sans-serif" font-size="86" font-weight="600" letter-spacing="-5">open-source contribution.</text>
+<path d="M84 520H1116" stroke="#292929"/>
+<text x="84" y="560" fill="#929292" font-family="Arial,Helvetica,sans-serif" font-size="19">Discover projects. Explore communities. Make an impact.</text>
+<g transform="translate(1030 78)" fill="none" stroke="#8b78ff" opacity=".75"><circle cx="55" cy="55" r="38"/><circle cx="55" cy="55" r="55" stroke-opacity=".35"/><path d="M55 0v110M0 55h110" stroke-opacity=".4"/></g>
+</svg>
